@@ -1,7 +1,7 @@
 {
   "name": "@noahlozevski/vue-google-oauth2",
-  "version": "1.5.5",
-  "description": "Handling Google Auth2 sign-in and sign-out, for front-end and backend-flows",
+  "version": "1.6.1",
+  "description": "Handling Google Auth2 sign-in and sign-out, for front-end and backend-flows, with and without cookies enabled",
   "main": "index.js",
   "types": "index.ts",
   "scripts": {
@@ -20,7 +20,8 @@
     "signout",
     "login",
     "logout",
-    "oauth2"
+    "oauth2",
+    "cookies"
   ],
   "author": "Noah Lozevski <noah@lozev.ski>",
   "license": "MIT",
