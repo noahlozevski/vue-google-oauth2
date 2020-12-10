@@ -1,6 +1,11 @@
 # vue-google-oauth2
 Handling Google sign-in and sign-out for Vue.js applications.
 
+This package is updated to support detection of disabled cookies. This causes issues when users try to login in incognito mode, and the iframe fails to load. This includes an extra flag, `cookiesDisabled` to check when the plugin is initializing. An external window is used to grab an authCode instead of the regular iframe in these disabled environments, and is passed back in same method outlined below (`$gAuth.getAuthCode()`).
+
+
+# Forked repo readme:
+
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/vue-google-oauth2.svg)
 ![GitHub](https://img.shields.io/github/license/guruahn/vue-google-oauth2.svg)
 ![vue-google-oauth2](https://img.shields.io/npm/dt/vue-google-oauth2.svg)
