@@ -35,7 +35,6 @@ var googleAuth = (function () {
   }
 
   function initClient(config) {
-    console.log(config)
     return new Promise((resolve, reject) => {
       window.gapi.load('auth2', () => {
         window.gapi.auth2.init(config)
@@ -133,7 +132,6 @@ var googleAuth = (function () {
             resolve(googleUser)
           })
           .catch(error => {
-            console.log('test')
             if (typeof errorCallback === 'function') errorCallback(error)
             reject(error)
           })
