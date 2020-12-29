@@ -1,6 +1,6 @@
 {
   "name": "@noahlozevski/vue-google-oauth2",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Handling Google Auth2 sign-in and sign-out, for front-end and backend-flows, with and without cookies enabled",
   "main": "index.js",
   "types": "index.ts",
